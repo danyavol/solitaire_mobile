@@ -1,7 +1,7 @@
 import 'interfaces.dart';
 import 'utils.dart';
 
-String basicPath = "playing-cards";
+String basicPath = "assets/playing-cards";
 
 var deck1 = <String, String>{
   getCardId(Rank.ace, Suit.diamonds): "$basicPath/set1/ace_of_diamonds.png",
