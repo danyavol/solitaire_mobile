@@ -1,4 +1,4 @@
-import 'package:solitaire_mobile/utils.dart';
+import 'package:solitaire_mobile/src/cards_services/utils.dart';
 
 enum Suit {
   diamonds, // ♦
