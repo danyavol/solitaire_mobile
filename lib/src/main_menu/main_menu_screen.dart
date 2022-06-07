@@ -67,6 +67,11 @@ class MainMenuScreen extends StatelessWidget {
               child: const Text('Settings'),
             ),
             _gap,
+            ElevatedButton(
+              onPressed: () => GoRouter.of(context).go('/test'),
+              child: const Text('Test page'),
+            ),
+            _gap,
           ],
         ),
       ),

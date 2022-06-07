@@ -25,3 +25,5 @@ String getCardId(Rank rank, Suit suit) {
   }
   return cardId;
 }
+
+const backSideId = "BS";

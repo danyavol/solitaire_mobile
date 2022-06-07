@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
+import 'package:solitaire_mobile/src/test_screen.dart';
 
 import 'src/app_lifecycle/app_lifecycle.dart';
 import 'src/games_services/games_services.dart';
@@ -24,31 +25,7 @@ import 'src/style/palette.dart';
 import 'src/style/snack_bar.dart';
 import 'src/win_game/win_game_screen.dart';
 
-// void setAllCards() {
-//   double borderRadius = 10;
-//   for (var entry in deck1.entries) {
-//     cards.add(
-//         Container(
-//             decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(borderRadius),
-//                 color: Colors.white,
-//                 border: Border.all(color: Colors.black, width: 1)
-//             ),
-//             margin: const EdgeInsets.all(5),
-//             padding: const EdgeInsets.all(3),
-//             child: ClipRRect(
-//               borderRadius: BorderRadius.circular(borderRadius),
-//               child: Image.asset(
-//                 entry.value,
-//                 width: 125,
-//                 height: 181.5,
-//                 fit: BoxFit.contain,
-//               ),
-//             )
-//         )
-//     );
-//   }
-// }
+
 
 void main() {
   if (kReleaseMode) {
@@ -138,6 +115,11 @@ class MyApp extends StatelessWidget {
               path: 'settings',
               builder: (context, state) =>
               const SettingsScreen(key: Key('settings')),
+            ),
+            GoRoute(
+              path: 'test',
+              builder: (context, state) =>
+              const TestScreen(key: Key('test')),
             ),
           ]),
     ],

@@ -4,6 +4,7 @@ import 'utils.dart';
 String basicPath = "assets/playing-cards";
 
 var deck1 = <String, String>{
+  backSideId: "$basicPath/set1/back_side.png",
   getCardId(Rank.ace, Suit.diamonds): "$basicPath/set1/ace_of_diamonds.png",
   getCardId(Rank.ace, Suit.hearts): "$basicPath/set1/ace_of_hearts.png",
   getCardId(Rank.ace, Suit.clubs): "$basicPath/set1/ace_of_clubs.png",
